@@ -1926,7 +1926,7 @@ h1 {
 
     .timeline-content {
         width: calc(100% - 60px);
-        margin-left: 60px !important;
+        margin-left: 60px;
     }
 
     .timeline-dot {
@@ -1953,8 +1953,8 @@ h1 {
     .projet-poster,
     .projet-logo,
     .projet-illustration {
-        grid-column: span 1 !important;
-        grid-row: span 1 !important;
+        grid-column: span 1;
+        grid-row: span 1;
         min-height: 250px;
     }
 
@@ -2006,30 +2006,31 @@ h1 {
         grid-template-columns: 1fr;
     }
 
-    /* Logo Container Mobile - Images complètes */
+    /* CORRECTION MAJEURE: Logo Container Mobile - Images complètes */
     .logo-container {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: auto !important;
-        gap: 20px;
-        max-width: 100% !important;
-        padding: 0 10px;
+        display: block;
+        max-width: 100%;
+        padding: 0 15px;
+        margin-bottom: 40px;
     }
 
     .logo-wrapper {
-        grid-column: span 1 !important;
-        grid-row: span 1 !important;
-        height: auto !important;
-        min-height: 0 !important;
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     }
 
     .logo-wrapper img {
         width: 100%;
-        height: auto !important;
-        object-fit: contain !important;
+        height: auto;
+        object-fit: contain;
         display: block;
     }
 
-    /* IDs spécifiques pour mobile */
+    /* Réinitialisation complète des styles grid pour mobile */
     #ecowear1, #ecowear2, #ecowear3, #ecowear4, #ecowear5,
     #sma1, #sma2, #sma3, #sma4, #sma5, #sma6,
     #faastime1, #faastime2, #faastime3, #faastime4, #faastime5, #faastime6, #faastime7,
@@ -2041,15 +2042,29 @@ h1 {
     #fifi1, #fifi2,
     #mia1, #sst1,
     #cheap1, #cheap2, #cheap3, #cheap4, #cheap5 {
-        grid-column: span 1 !important;
-        grid-row: span 1 !important;
-        height: auto !important;
+        width: 100%;
+        height: auto;
     }
 
-    /* Footer */
+    #ecowear1 img, #ecowear2 img, #ecowear3 img, #ecowear4 img, #ecowear5 img,
+    #sma1 img, #sma2 img, #sma3 img, #sma4 img, #sma5 img, #sma6 img,
+    #faastime1 img, #faastime2 img, #faastime3 img, #faastime4 img, #faastime5 img, #faastime6 img, #faastime7 img,
+    #taxawu1 img, #taxawu2 img, #taxawu3 img, #taxawu4 img,
+    #sublime1 img, #sublime2 img, #sublime3 img, #sublime4 img, #sublime5 img,
+    #ecowearaff1 img, #ecowearaff2 img, #ecowearaff3 img, #ecowearaff4 img,
+    #bes1 img, #bes2 img, #bes3 img, #bes4 img,
+    #cestp1 img, #cestp2 img,
+    #fifi1 img, #fifi2 img,
+    #mia1 img, #sst1 img,
+    #cheap1 img, #cheap2 img, #cheap3 img, #cheap4 img, #cheap5 img {
+        object-fit: contain;
+    }
+
+    /* Footer Mobile avec espacement correct */
     #footer {
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
+        padding: 30px 20px;
     }
 
     #footer #menu {
@@ -2058,11 +2073,36 @@ h1 {
 
     #footer #menu ul {
         justify-content: center;
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+
+    #footer #menu ul li {
+        margin: 5px;
+    }
+
+    #footer #menu ul li a img {
+        height: 30px;
+        width: 30px;
+    }
+
+    #footer #menu ul #behance a img {
+        height: 23px;
+        width: 30px;
+    }
+
+    #footer #name {
+        text-align: center;
     }
 
     .hover-instruction {
         font-size: 0.9em;
         color: rgba(0, 0, 0, 0.8);
+        margin-bottom: 15px;
+    }
+
+    .ecowear-link {
+        font-size: 0.9em;
         margin-bottom: 15px;
     }
 }
