@@ -1797,7 +1797,7 @@ h1 {
 @media (max-width: 768px) {
     /* Navigation */
     #nav {
-        padding: 15px;
+        padding: 10px;
     }
     
     #nav #logo img {
@@ -2006,15 +2006,50 @@ h1 {
         grid-template-columns: 1fr;
     }
 
+    /* Logo Container Mobile - Images complètes */
     .logo-container {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        gap: 20px;
+        max-width: 100% !important;
+        padding: 0 10px;
+    }
+
+    .logo-wrapper {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .logo-wrapper img {
+        width: 100%;
+        height: auto !important;
+        object-fit: contain !important;
+        display: block;
+    }
+
+    /* IDs spécifiques pour mobile */
+    #ecowear1, #ecowear2, #ecowear3, #ecowear4, #ecowear5,
+    #sma1, #sma2, #sma3, #sma4, #sma5, #sma6,
+    #faastime1, #faastime2, #faastime3, #faastime4, #faastime5, #faastime6, #faastime7,
+    #taxawu1, #taxawu2, #taxawu3, #taxawu4,
+    #sublime1, #sublime2, #sublime3, #sublime4, #sublime5,
+    #ecowearaff1, #ecowearaff2, #ecowearaff3, #ecowearaff4,
+    #bes1, #bes2, #bes3, #bes4,
+    #cestp1, #cestp2,
+    #fifi1, #fifi2,
+    #mia1, #sst1,
+    #cheap1, #cheap2, #cheap3, #cheap4, #cheap5 {
+        grid-column: span 1 !important;
+        grid-row: span 1 !important;
+        height: auto !important;
     }
 
     /* Footer */
     #footer {
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
     }
 
     #footer #menu {
