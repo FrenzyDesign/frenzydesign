@@ -13,7 +13,7 @@
    ======================================== */
 body {
     font-family: 'Arial', sans-serif;
-    background-image: url(Background1.png);
+    background-image: url(Background1.webp);
     background-size: cover;
     padding: 0;
 }
@@ -81,7 +81,7 @@ body {
 {
     width: 100%;
     padding: 60px 0;
-    background-image: url('Background.png');
+    background-image: url('Background.webp');
     background-size: cover;
     background-position: center;
 }
@@ -350,7 +350,7 @@ body {
     margin: 0 auto;
     padding: 40px 20px;
 
-    background-image: url(Background1.png);
+    background-image: url(Background1.webp);
 }
 
 /* ========================================
@@ -1536,7 +1536,7 @@ h1 {
         .main-container {
             margin: 0 auto;
             padding: 40px 20px;
-            background-image: url(Background1.png);
+            background-image: url(Background1.webp);
         }
 
         /* ========================================
@@ -1717,7 +1717,7 @@ h1 {
 .main-container {
     margin: 0 auto;
     padding: 40px 20px;
-    background-image: url(Background1.png);
+    background-image: url(Background1.webp);
 }
 
 /* ========================================
@@ -2007,7 +2007,7 @@ h1 {
 
  /* Hero Section avec votre background */
         .hero-section {
-            background-image: url('Background.png');
+            background-image: url('Background.webp');
             background-size: cover;
             background-position: center;
             min-height: 100vh;
@@ -2076,7 +2076,7 @@ h1 {
         /* Section Services rapides */
         .services-quick {
             padding: 60px 5%;
-            background-image: url('Background1.png');
+            background-image: url('Background1.webp');
         }
 
         .services-quick h2 {
@@ -2245,7 +2245,7 @@ h1 {
         /* Section Stats */
         .stats-section {
             padding: 60px 5%;
-            background-image: url('Background1.png');
+            background-image: url('Background1.webp');
         }
 
         .stats-grid {
@@ -2386,7 +2386,7 @@ h1 {
 
          /* Styles spécifiques à la page About */
         .hero-about {
-            background: url('Background2.png');
+            background: url('Background2.webp');
             background-size: cover;
             background-position: center;
             min-height: 90vh;
@@ -2423,7 +2423,7 @@ h1 {
         .about-content {
             width: 100%;
             padding: 80px 0;
-            background-image: url('Background1.png');
+            background-image: url('Background1.webp');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -2466,7 +2466,7 @@ h1 {
         .stats-container {
             width: 100%;
             padding: 60px 0;
-            background-image: url('Background1.png');
+            background-image: url('Background1.webp');
             background-size: cover;
             background-position: center;
         }
@@ -2601,7 +2601,7 @@ h1 {
         .timeline-container {
             width: 100%;
             padding: 60px 0;
-            background-image: url('Background1.png');
+            background-image: url('Background1.webp');
             background-size: cover;
             background-position: center;
         }
