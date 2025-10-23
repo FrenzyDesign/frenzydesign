@@ -968,27 +968,27 @@ h1 {
 }
 
 /* Tailles spécifiques */
-#logo {
+#projet-logo {
     grid-column: span 1;
     grid-row: span 1;
 }
 
-#poster {
+#projet-poster {
     grid-column: span 2;
     grid-row: span 2;
 }
 
-#flocage {
+#projet-flocage {
     grid-column: span 1;
     grid-row: span 2;
 }
 
-#affiche {
+#projet-affiche {
     grid-column: span 1;
     grid-row: span 2;
 }
 
-#illustration {
+#projet-illustration {
     grid-column: span 3;
     grid-row: span 1;
 }
