@@ -13,25 +13,26 @@
     <link rel="manifest" href="favicon/site.webmanifest" />
 </head>
 <body>
-	<div id="nav">
-		<div id="logo">
-			<img src="logo1.svg">
-		</div>
-		<div id="menu">
-			<ul>
-				<li><a href="index.html">Accueil</a></li>
-				<li><a href="projet.html" style="color : orangered;">Projets</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="about.html">À Propos</a></li>
-				<li><a href="https://www.instagram.com/fren.zydesign"><img src="icon/Instagram.svg"></a></li>
-				<li><a href="https://www.tiktok.com/@frenzydesign"><img src="icon/TikTok.svg"></a></li>
-			</ul>
-		</div>
-	</div>
+    <div id="nav">
+        <div id="logo">
+            <img src="logo1.svg" alt="Frenzy Design">
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projet.html" style="color : orangered;">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="https://www.instagram.com/fren.zydesign"><img src="icon/Instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.tiktok.com/@frenzydesign"><img src="icon/TikTok.svg" alt="TikTok"></a></li>
+            </ul>
+        </div>
+    </div>
     <div class="container">
         <h1>Mes Projets</h1>
         <div class="projets-grid">
-            <div id="logo" class="projet-item" data-link="page-logo.html">
+            <!-- ID différenciés pour éviter les conflits -->
+            <div id="projet-logo" class="projet-item" data-link="page-logo.html">
                 <img src="images/logo1.webp" alt="Logo">
                 <div class="projet-info">
                     <a href="page-logo.html" class="projet-link">
@@ -40,7 +41,7 @@
                     </a>
                 </div>
             </div>
-            <div id="poster" class="projet-item" data-link="page-poster.html">
+            <div id="projet-poster" class="projet-item" data-link="page-poster.html">
                 <img src="images/poster.webp" alt="Poster">
                 <div class="projet-info">
                     <a href="page-poster.html" class="projet-link">
@@ -49,7 +50,7 @@
                     </a>
                 </div>
             </div>
-            <div id="flocage" class="projet-item" data-link="page-flocage.html">
+            <div id="projet-flocage" class="projet-item" data-link="page-flocage.html">
                 <div class="carousel-images">
                         <img src="images/flocage1.webp" alt="Flocage 1" class="carousel-img active">
                         <img src="images/flocage2.webp" alt="Flocage 2" class="carousel-img">
@@ -62,7 +63,7 @@
                     </a>
                 </div>
             </div>
-            <div id="affiche" class="projet-item" data-link="page-affiche.html">
+            <div id="projet-affiche" class="projet-item" data-link="page-affiche.html">
                 <div class="carousel-images">
                         <img src="images/affiche1.webp" alt="Affiche 1" class="carousel-img active">
                         <img src="images/affiche2.webp" alt="Affiche 2" class="carousel-img">
@@ -76,7 +77,7 @@
                     </a>
                 </div>
             </div>
-            <div id="illustration" class="projet-item" data-link="page-illustration.html">
+            <div id="projet-illustration" class="projet-item" data-link="page-illustration.html">
                 <img src="images/illustration.webp" alt="Illustration">
                 <div class="projet-info">
                     <a href="page-illustration.html" class="projet-link">
@@ -88,19 +89,19 @@
         </div>
     </div>
     <div id="footer">
-		<div id="menu">
-			<ul>
-				<li id="behance"><a href="https://www.behance.net/fmaster"><img src="icon/Behance.svg"></a></li>
-				<li><a href="https://fr.pinterest.com/frenzydesign50/"><img src="icon/Pinterest.svg"></a></li>
-				<li><a href="https://www.instagram.com/fren.zydesign"><img src="icon/Instagram.svg"></a></li>
-				<li><a href="https://www.tiktok.com/@frenzydesign"><img src="icon/TikTok.svg"></a></li>
-				<li><a href="mailto:frenzydesign50@gmail.com"><img src="icon/email.svg"></a></li>
-			</ul>
-		</div>
-		<div id="name">
-			<p>© 2025 by Frenzy Design</p>
-		</div>
-	</div>
+        <div id="menu">
+            <ul>
+                <li id="behance"><a href="https://www.behance.net/fmaster"><img src="icon/Behance.svg" alt="Behance"></a></li>
+                <li><a href="https://fr.pinterest.com/frenzydesign50/"><img src="icon/Pinterest.svg" alt="Pinterest"></a></li>
+                <li><a href="https://www.instagram.com/fren.zydesign"><img src="icon/Instagram.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.tiktok.com/@frenzydesign"><img src="icon/TikTok.svg" alt="TikTok"></a></li>
+                <li><a href="mailto:frenzydesign50@gmail.com"><img src="icon/email.svg" alt="Email"></a></li>
+            </ul>
+        </div>
+        <div id="name">
+            <p>© 2025 by Frenzy Design</p>
+        </div>
+    </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
