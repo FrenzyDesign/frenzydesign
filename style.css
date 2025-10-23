@@ -2257,13 +2257,13 @@ h1 {
     .hero-about {
         min-height: 60vh;
         padding: 60px 15px 40px;
-        align-items: flex-end;
-        justify-content: flex-start;
+        align-items: flex-end !important;
+        justify-content: flex-start !important;
     }
 
     .hero-about-content {
-        margin-left: 5%;
-        text-align: left;
+        margin-left: 5% !important;
+        text-align: left !important;
         max-width: 90%;
     }
 
@@ -2290,11 +2290,15 @@ h1 {
     .about-section h2 {
         font-size: 1.6em;
         margin-bottom: 20px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .about-section p {
         font-size: 15px;
         line-height: 1.7;
+        padding: 0;
+        margin-bottom: 15px;
     }
 
     /* Stats Cards */
@@ -2425,11 +2429,13 @@ h1 {
     .cta-section h2 {
         font-size: 1.8em;
         margin-bottom: 20px;
+        padding: 0 10px;
     }
 
     .cta-button {
         padding: 12px 35px;
         font-size: 1em;
+        margin: 0 10px;
     }
 
     /* Projets Grid Principale */
