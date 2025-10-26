@@ -2,12 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://frenzydesign.github.io/sitemap.xml
-
-# Bloquer les fichiers inutiles à l’indexation
-Disallow: /assets/
-Disallow: /css/
-Disallow: /js/
-Disallow: /images/
-
-# Informations facultatives (non obligatoires)
-Host: https://frenzydesign.github.io
