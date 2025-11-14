@@ -2861,3 +2861,249 @@ h1 {
         font-size: 0.95em;
     }
 }
+/* ========================================
+   27. PAGE MERCI - STYLES SPÉCIFIQUES
+   ======================================== */
+
+/* Section principale page merci */
+.merci-section {
+    min-height: calc(100vh - 240px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+/* Carte de message */
+.merci-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 60px 80px;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.6s ease-out;
+}
+
+/* Animation d'apparition de la carte */
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Icône de succès (cercle) */
+.success-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 30px;
+    background: orangered;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: scaleIn 0.5s ease-out 0.2s both;
+}
+
+/* Animation d'apparition du cercle */
+@keyframes scaleIn {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+/* SVG du checkmark */
+.success-icon svg {
+    width: 50px;
+    height: 50px;
+    stroke: white;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: checkmark 0.6s ease-out 0.5s forwards;
+}
+
+/* Animation de dessin du checkmark */
+@keyframes checkmark {
+    to { stroke-dashoffset: 0; }
+}
+
+/* Titre de la carte */
+.merci-card h1 {
+    font-size: 2.5em;
+    color: #222;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'lemon milk', Arial, sans-serif;
+}
+
+/* Paragraphes de la carte */
+.merci-card p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-family: montserrat, Arial, sans-serif;
+}
+
+/* Texte mis en avant */
+.highlight {
+    color: orangered;
+    font-weight: bold;
+}
+
+/* Séparateur visuel */
+.divider {
+    width: 80px;
+    height: 4px;
+    background: orangered;
+    margin: 30px auto;
+    border-radius: 2px;
+}
+
+/* Texte d'information */
+.info-text {
+    font-size: 1em;
+    color: #666;
+    margin-top: 25px;
+}
+
+/* Groupe de boutons */
+.button-group {
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Style de base des boutons */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    font-family: 'lemon milk', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Bouton principal */
+.btn-primary {
+    background: orangered;
+    color: white;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
+}
+
+.btn-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 69, 0, 0.4);
+}
+
+/* Bouton secondaire */
+.btn-secondary {
+    background: transparent;
+    color: #222;
+    border: 2px solid #222;
+}
+
+.btn-secondary:hover {
+    background: #222;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* ========================================
+   RESPONSIVE PAGE MERCI - TABLETTE
+   ======================================== */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .merci-section { 
+        padding: 60px 20px; 
+    }
+
+    .merci-card { 
+        padding: 50px 60px; 
+        max-width: 600px; 
+    }
+
+    .merci-card h1 { 
+        font-size: 2.2em; 
+    }
+
+    .merci-card p { 
+        font-size: 1.1em; 
+    }
+}
+
+/* ========================================
+   RESPONSIVE PAGE MERCI - MOBILE
+   ======================================== */
+@media (max-width: 768px) {
+    .merci-section { 
+        padding: 40px 15px; 
+        min-height: calc(100vh - 200px); 
+    }
+
+    .merci-card { 
+        padding: 40px 30px; 
+        border-radius: 15px; 
+    }
+
+    .success-icon { 
+        width: 80px; 
+        height: 80px; 
+    }
+
+    .success-icon svg { 
+        width: 40px; 
+        height: 40px; 
+    }
+
+    .merci-card h1 { 
+        font-size: 1.8em; 
+    }
+
+    .merci-card p { 
+        font-size: 1em; 
+    }
+
+    .button-group { 
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .btn { 
+        width: 100%; 
+    }
+}
+
+/* ========================================
+   RESPONSIVE PAGE MERCI - PETIT MOBILE
+   ======================================== */
+@media (max-width: 480px) {
+    .merci-card { 
+        padding: 35px 25px; 
+    }
+
+    .merci-card h1 { 
+        font-size: 1.5em; 
+    }
+
+    .merci-card p { 
+        font-size: 0.95em; 
+    }
+
+    .success-icon { 
+        width: 70px; 
+        height: 70px; 
+    }
+
+    .btn { 
+        padding: 12px 28px; 
+        font-size: 0.9em; 
+    }
+}

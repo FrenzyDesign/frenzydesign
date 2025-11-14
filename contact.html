@@ -52,7 +52,8 @@
 
             <div class="contact-right">
             	<h2>Contact</h2>
-                <form class="contact-form" action="https://formspree.io/f/mjkalaza" method="POST">
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                	<input type="hidden" name="access_key" value="fdc3a431-5fb5-470a-885b-134fa051a7d3">
                     <div class="form-group">
                         <label for="subject">Prénom *</label>
                         <input type="text" id="prenom" name="prenom" required>
@@ -73,7 +74,11 @@
                         <label for="message">Ecrivez un message *</label>
                         <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
-                    <input type="hidden" name="_next" value="merci.html">
+                    <!-- Honeypot -->
+					<div style="display:none;">
+						<input type="text" name="website" autocomplete="off">
+					</div>
+                    <input type="hidden" name="redirect" value="https://frenzydesign.github.io/merci.html">
                     <button type="submit" class="submit-btn">Envoyer</button>
                     
                 </form>	
